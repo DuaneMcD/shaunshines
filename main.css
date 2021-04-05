@@ -1,0 +1,65 @@
+:root {
+  --theme-blue: #1995bf;
+  --theme-orange: #fe9922;
+  --theme-darkblue: #022b3a;
+  --theme-bluegrey: #e1e5f2;
+  --theme-redaccent: #6f1d1b;
+  --theme-offwhite: #ffffff;
+}
+body {
+  background-color: navy;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+h1,
+h2 {
+  color: black;
+}
+.hiddenH1 {
+  display: none;
+}
+#address {
+  color: var(--theme-blue);
+  font-size: 2.7em;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+header {
+  margin: 0;
+  padding: 0;
+  background-image: url("images/car-door-open-header-optimized.jpg");
+  min-width: 768px;
+  max-width: 991px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.textSeperator::after {
+  display: flex;
+  content: "";
+  background: orange;
+  display: block;
+  margin-top: 10px;
+  width: 45%;
+  height: 3.25px;
+  border-radius: 49%;
+  margin-inline: auto;
+}
+section {
+  background-color: navy;
+}
+#card {
+  background-color: var(--theme-offwhite);
+}
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+  text-align: center;
+  background-color: black;
+}
