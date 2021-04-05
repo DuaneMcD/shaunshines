@@ -1,0 +1,33 @@
+@import "./theme.css";
+
+.hiddenH1 {
+  display: none;
+}
+#address {
+  color: var(--theme-blue);
+  font-size: 2.7em;
+}
+nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+header {
+  display: inline-block;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/car-door-open-header-optimized.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+header img {
+  margin: 0;
+  width: 50%;
+}

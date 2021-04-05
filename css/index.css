@@ -1,0 +1,58 @@
+@import "./theme.css";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: var(--theme-darkblue);
+}
+h1,
+h2 {
+  color: black;
+  font-family: var(--theme-font-playfair);
+  letter-spacing: 0.05em;
+}
+h3 {
+  font-family: var(--theme-font-varela);
+  font-size: 1.35em;
+  letter-spacing: 0.025em;
+  font-style: italic;
+  font-weight: normal;
+}
+h4 {
+  font-family: var(--theme-font-crete);
+  font-size: 1.6em;
+  letter-spacing: 0.1em;
+  font-style: bolder;
+}
+h5,
+ul {
+  font-family: var(--theme-font-crete);
+  font-size: 1.15em;
+  letter-spacing: 0.05em;
+  font-style: bolder;
+}
+#shaunQuote {
+  font-size: 5em;
+}
+.textSeperator::after {
+  content: "";
+  display: block;
+  background: orange;
+  margin-top: 12px;
+  width: 45%;
+  height: 3.25px;
+  border-radius: 49%;
+  margin-inline: auto;
+}
+#info {
+  margin-top: 900px;
+  text-align: center;
+}
+#card {
+  background-color: var(--theme-offwhite);
+}
