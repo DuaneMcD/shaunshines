@@ -3,27 +3,37 @@
     <link rel="stylesheet" href="./css/header.css" />
   </head>
   <body>
-    <div class='headerContact'>
-      <a class='headerPhoneNumber' href='tel:+1757-754-7133'><i class="bi bi-telephone-outbound"></i> (757) 754-7133 </a>
-      <p class="HeaderEmail">Hello@ShaunShines.com</p>
-  </div>
-    <nav>
-      <h1 class="hiddenH1">Shaun Shines Detailing</h1>
-      <ul>
-        <li><a href="https://www.shaunshines.com/home">Home</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="https://www.shaunshines.com/contact">Contact</a></li>
-        <li><a href="https://www.shaunshines.com/about">About</a></li>
-      </ul>
-    </nav>
-      <img
-        src="images/Shaun-shines-detailing-header-optimized.png"
-      />
-      <a
-        id="address"
-        href="https://www.google.com/maps/place/Shaun+Shines+Automotive+Detailing/@36.8141086,-76.1014505,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xd628d231aa7bdf57!8m2!3d36.8141086!4d-76.0992618?authuser=5"
-      >
-        3642 Holland Road Unit 103, Virgina Beach, VA 23452
-      </a>
+    <section class="header">
+      <div class='title-bar'>
+        <div class='headerContact'>
+          <a class='headerPhoneNumber' href='tel:+1757-754-7133'><i class="bi bi-telephone-outbound"></i> (757) 754-7133 </a>
+          <a class="headerEmail" href="mailto:Hello@shaunshines.com?subject=customer%20contact"><i class="bi bi-envelope"></i>  Hello@ShaunShines.com</a>
+        </div>
+        <input type='checkbox' id="nav-toggle" class='nav-toggle'>
+        <nav>
+          <h1 class="hiddenH1">Shaun Shines Detailing</h1>
+          <ul>
+            <li><a href="https://www.shaunshines.com/home">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="https://www.shaunshines.com/contact">Contact</a></li>
+            <li><a href="https://www.shaunshines.com/about">About</a></li>
+          </ul>
+        </nav>
+        <label for="nav-toggle" class="nav-toggle-label">
+          <span></span>
+        </label> 
+      </div>
+      <div class='headerGraphics'>
+        <img class='headerWordMark'
+          src="images/Shaun-shines-detailing-header-optimized.png"
+        />
+        <a
+          id="address"
+          href="https://www.google.com/maps/place/Shaun+Shines+Automotive+Detailing/@36.8141086,-76.1014505,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xd628d231aa7bdf57!8m2!3d36.8141086!4d-76.0992618?authuser=5"
+        >
+          3642 Holland Road Unit 103, Virgina Beach, VA 23452
+        </a>
+      </div>
+    </section>
     </body>
 </html>

@@ -25,34 +25,82 @@ h3 {
 }
 h4 {
   font-family: var(--theme-font-crete);
-  font-size: 1.6em;
+  font-size: 2em;
   letter-spacing: 0.1em;
   font-style: bolder;
 }
 h5,
 ul {
   font-family: var(--theme-font-crete);
-  font-size: 1.15em;
+  font-size: 1.5em;
   letter-spacing: 0.05em;
   font-style: bolder;
 }
+
+#info {
+  text-align: center;
+}
+#card {
+  background-color: var(--theme-offwhite);
+  padding-bottom: 2.5em;
+  border: 1.1em solid var(--theme-darkblue);
+}
 #shaunQuote {
   font-size: 5em;
+}
+.features {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: minmax(50px, auto);
+  grid-template-areas:
+    "cleaning interior paintCorrection"
+    "quality location advanceProctection";
+}
+#card > div > div > h4 {
+  font-size: 2.2em;
+}
+#card > div > div > h5 {
+  font-size: 1.4em;
+}
+.cleaning {
+  grid-area: cleaning;
+}
+.interior {
+  grid-area: interior;
+}
+.paintCorrection {
+  grid-area: paintCorrection;
+}
+.quality {
+  grid-area: quality;
+}
+.location {
+  grid-area: location;
+}
+.advanceProtection {
+  grid-area: advanceProtection;
+}
+.shaunShinesIs {
+  padding-top: 2.5em;
+}
+.askUsAbout {
+  padding-top: 0.5em;
 }
 .textSeperator::after {
   content: "";
   display: block;
   background: orange;
-  margin-top: 12px;
   width: 45%;
   height: 3.25px;
   border-radius: 49%;
   margin-inline: auto;
 }
-#info {
-  margin-top: 900px;
-  text-align: center;
+.listContainer {
+  display: flex;
+  justify-content: center;
+  line-height: 2;
 }
-#card {
-  background-color: var(--theme-offwhite);
+li {
+  list-style-type: none;
+  color: black;
 }

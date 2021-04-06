@@ -1,5 +1,8 @@
 @import "./theme.css";
 
+.contactContainer {
+  margin-block: 1em;
+}
 .contact {
   display: flex;
   align-content: center;
