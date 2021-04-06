@@ -18,6 +18,10 @@ footer {
   margin-top: 1em;
   padding-top: 1.25em;
 }
+.hours {
+  text-decoration: none;
+  color: white;
+}
 .centerCol {
   margin-left: 10em;
   margin-right: 10em;
