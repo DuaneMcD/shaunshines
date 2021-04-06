@@ -56,6 +56,9 @@
   color: var(--theme-orange);
   margin-top: 0.5em;
 }
+.bi.bi-calendar2-event {
+  font-size: 0.85em;
+}
 #scheduleService {
   font-size: 1.7em;
   color: var(--theme-orange);
