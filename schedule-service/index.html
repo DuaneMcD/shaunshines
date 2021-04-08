@@ -5,22 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shaun Shines Detailing</title>
-    <link rel="stylesheet" href="schedule-service.css" />
-    <link rel="stylesheet" href="../css/header.css" />
-    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="./schedule-service.css" />
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
-    <script src="schedule-service-import.js" defer></script>
+    <script src="./schedule-service-import.js" defer></script>
     <script src="../chatra.js" defer></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="http://www.carqueryapi.com/js/carquery.0.3.4.js"
+    ></script>
+    <script src="./car-query.js"></script>
   </head>
   <body>
     <header></header>
     <main class="shop">
       <button id="cart" class="cart"><i class="bi bi-cart-fill"></i></button>
       <h1 class="title">Schedule Service</h1>
-      <img class="shopImage" src="../images/honoringthosewhoserve.svg" alt="" />
+      <img class="shopImage" src="./images/tireCleaner.jpg" alt="" />
       <p class="salesCopy">
         Shaun Shines offers bespoke detailing services to suite your vehicle
         needs. <br />
@@ -35,6 +43,47 @@
         pitted, soiled, badly scratched etc. All vehicles are reviewed for
         condition before service.
       </p>
+      <div class="carpicker">
+        <p class="prompt">Please select a vehicle</p>
+        <select name="car-years" id="car-years" class="vehicle year">
+          <option value="" required>Select a year</option>
+        </select>
+        <select name="car-makes" id="car-makes" class="vehicle make" required>
+          <option value="">Select a make</option>
+        </select>
+        <select
+          name="car-models"
+          id="car-models"
+          class="vehicle model"
+          required
+        >
+          <option value="">Select a model</option>
+        </select>
+        <select
+          name="car-model-trims"
+          id="car-model-trims"
+          class="trims"
+          required
+        >
+          <option value="">Select a trim</option>
+        </select>
+        <input
+          type="datetime-local"
+          id="dateTime"
+          class="dateTime"
+          step="3600"
+          required
+        />
+        <p class="prompt detailService">Detail service:</p>
+        <select class="vehicle service">
+          <option value="Select a Service" required>Select a Service</option>
+          <option value="Shine">Make It Shine!</option>
+          <option value="Exterior">Exterior Only</option>
+          <option value="Interior">Interior Only</option>
+          <option value="Custom">Custom Package</option>
+        </select>
+      </div>
+      <button class="addToCart">Add to cart</button>
     </main>
     <footer></footer>
   </body>
